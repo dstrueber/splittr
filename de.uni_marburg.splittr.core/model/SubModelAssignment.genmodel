@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.uni_marburg.splittr.core/src" modelPluginID="de.uni_marburg.splittr.core"
+    modelName="SubModelAssignment" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>SubModelAssignment.ecore</foreignModel>
+  <genPackages prefix="SplittrResult" basePackage="de.uni_marburg.splittr" disposableProviderFactory="true"
+      ecorePackage="SubModelAssignment.ecore#/">
+    <genClasses ecoreClass="SubModelAssignment.ecore#//SubModelAssignmentResult">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SubModelAssignment.ecore#//SubModelAssignmentResult/entries"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SubModelAssignment.ecore#//SubModelAssignmentResult/subModels"/>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findSubModelByName">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findSubModelByName/featureName"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesByElementName">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesByElementName/elementName"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesByElement">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesByElement/element"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesBySubModel">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesBySubModel/feature"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesBySubModel.1">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntriesBySubModel.1/featureName"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement/feature"/>
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement/element"/>
+      </genOperations>
+      <genOperations ecoreOperation="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement.1">
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement.1/featureName"/>
+        <genParameters ecoreParameter="SubModelAssignment.ecore#//SubModelAssignmentResult/findResultEntryBySubModelAndElement.1/elementName"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="SubModelAssignment.ecore#//SubModelAssignmentResultEntry">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SubModelAssignment.ecore#//SubModelAssignmentResultEntry/subModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SubModelAssignment.ecore#//SubModelAssignmentResultEntry/relevantElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SubModelAssignment.ecore#//SubModelAssignmentResultEntry/score"/>
+    </genClasses>
+    <genClasses ecoreClass="SubModelAssignment.ecore#//SubModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SubModelAssignment.ecore#//SubModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SubModelAssignment.ecore#//SubModel/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

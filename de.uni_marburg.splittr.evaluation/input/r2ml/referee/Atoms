@@ -1,0 +1,17 @@
+DataAtom
+ObjectAtom
+DataClassificationAtom
+DatatypePredicateAtom
+InequalityAtom
+EqualityAtom
+ObjectClassificationAtom
+GenericAtom
+Slot
+PropertyAtom
+DataSlot
+ObjectSlot
+ReferencePropertyAtom
+AttributionAtom
+ObjectDescriptionAtom
+AssociationAtom
+Atom

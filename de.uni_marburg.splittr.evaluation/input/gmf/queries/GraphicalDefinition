@@ -1,0 +1,1 @@
+The Graphical Definition model is instantiated to gather information about the diagram editor from a toolsmith. The graphical definition model is used to describe composition of GEF figures forming diagram elements – Node, Connection, Compartment and Label. Diagram element figures can be composed either from standard GEF figures or from custom figures. 

@@ -1,0 +1,28 @@
+grammar de.uni_marburg.splittr.description.SplittingDescription with org.eclipse.xtext.common.Terminals
+
+generate splittr "http://www.uni_marburg.de/splittr/description/SplittingDescription"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+SplittingDescription:
+	'split model' modelLocation=STRING
+	('partially with threshold' threshold=DOUBLE)?
+	'into'
+	submodels+=SubModel*
+	
+	('fine-tune'
+	('weight of generalization' '=' weightGeneralization=DOUBLE)? &
+	('weight of aggregation' '=' weightAggregation=DOUBLE)? &
+	('weight of association' '='weightAssociation=DOUBLE)? &
+	('weight of containment' '=' weightContainment=DOUBLE)? &
+	('weight of interface realization' '=' weightInterface=DOUBLE)? &
+	('weight of enum instantiation' '=' weightEnum=DOUBLE)? &
+	('alpha = ' alpha=DOUBLE)?
+	)?
+;
+SubModel:
+	'sub-model' name=ID '{' description=STRING
+	'}'
+	;
+
+terminal DOUBLE returns ecore::EDouble:
+	INT '.' INT;

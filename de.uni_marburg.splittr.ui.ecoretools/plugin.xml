@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="de.uni_marburg.splittr.ui.ecoretools.Activator"
+               id="de.uni_marburg.splittr.ui.ecoretools"
+	       name="modelSplit_extension">
+    </component>
+  </extension>
+  <extension
+        point="org.eclipse.sirius.externalJavaAction">
+     <javaActions
+           actionClass="de.uni_marburg.splittr.ui.ecoretools.editor.AssignSubModelAction"
+           id="de.uni_marburg.splittr.ui.ecoretools.action.assignsubmodel">
+     </javaActions>
+  </extension>
+  <extension
+        point="org.eclipse.ui.popupMenus">
+     <objectContribution
+           id="de.uni_marburg.splittr.ui.ecoretools.trigger.menucontribution"
+           nameFilter="*.ecore"
+           objectClass="org.eclipse.core.resources.IFile">
+ <!--       <menu
+              id="de.uni_marburg.mflt.vsp.menu1"
+              label="Model Split"
+              path="additions">
+           <separator
+                 name="group1">
+           </separator>
+        </menu> 
+        <action
+              class="de.uni_marburg.splittr.ui.ecoretools.trigger.TriggerSplittingSuggestionAction"
+              enablesFor="1"
+              id="de.uni_marburg.splittr.ui.ecoretools.trigger.suggestion"
+              label="Split Model"
+              menubarPath="de.uni_marburg.mflt.vsp.menu1">
+        </action> -->
+        <action
+              class="de.uni_marburg.splittr.ui.ecoretools.actions.CreateSplittingDescriptionStubAction"
+              enablesFor="1"
+              id="de.uni_marburg.splittr.ui.ecoretools.actions.stub"
+              label="Create a Splitting Description..."> <!--/group1-->
+        </action>
+     </objectContribution>
+     <objectContribution
+           id="de.uni_marburg.splittr.ui.ecoretools.trigger.menucontribution"
+           nameFilter="*.splittr"
+           objectClass="org.eclipse.core.resources.IFile">
+        <action
+              class="de.uni_marburg.splittr.ui.ecoretools.actions.DeriveSplittingSuggestionAction"
+              enablesFor="1"
+              id="de.uni_marburg.splittr.ui.ecoretools.actions.derive"
+              label="Derive a Splitting Suggestion...">
+        </action> 
+     </objectContribution>
+     <objectContribution
+           id="de.uni_marburg.splittr.ui.ecoretools.trigger.menucontribution"
+           nameFilter="*.splittrResult"
+           objectClass="org.eclipse.core.resources.IFile">
+        <action
+              class="de.uni_marburg.splittr.ui.ecoretools.actions.SplitResourceAction"
+              enablesFor="1"
+              id="de.uni_marburg.splittr.ui.ecoretools.actions.split"
+              label="Split Input Model to Multiple Files...">
+        </action> 
+     </objectContribution>
+     <objectContribution
+           id="de.uni_marburg.splittr.ui.ecoretools.trigger.menucontribution"
+           nameFilter="*.splittrResult"
+           objectClass="org.eclipse.core.resources.IFile">
+        <action
+              class="de.uni_marburg.splittr.ui.ecoretools.actions.SplitPackageAction"
+              enablesFor="1"
+              id="de.uni_marburg.splittr.ui.ecoretools.actions.split"
+              label="Split Input Model to Multiple Packages...">
+        </action> 
+     </objectContribution>
+  </extension>
+  
+</plugin>

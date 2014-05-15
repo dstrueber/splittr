@@ -1,0 +1,12 @@
+Patient
+VisitRecord
+Prescription
+MedicalProcedure
+WardStayRecord
+IntraWardRecord
+InPatient
+OutPatient
+InVisitRecord
+OutVisitRecord
+WristBand
+HealthCard

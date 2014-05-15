@@ -1,0 +1,1 @@
+The Configuration consists of a system, database, ftp, mailer and website configuration. The Template definition is also a part of the configuration. Beside the optional definition of editors, the configuration contains various language definitions.

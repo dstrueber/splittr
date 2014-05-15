@@ -1,0 +1,3 @@
+7. RULES 
+
+Integrity rules, also known as (integrity) constraints, consist of a constraint assertion, which is a sentence in a logical language such as first-order predicate logic or OCL. R2ML derivation rules have "conditions" and "conclusions". Conditions of a derivation rule are AndOrNafNegFormula. Conclusions are restricted to DNF conjuncts (disjunction of literal conjunctions). Production rules have "conditions", "post-conditions" and a "produced action".  Conditions and postconditions of a production rule are LogicalFormula. 

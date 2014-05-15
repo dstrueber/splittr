@@ -1,0 +1,5 @@
+Wards have rooms for patients to stay in. Rooms have beds, and beds are numbered per room, so a
+combination of the ward, room, and bed number will uniquely identify every bed in the hospital.
+The pieces of equipment in a ward can be mobile or stationary.
+If stationary, a piece will be assigned to a single ward room or unit; and if mobile, it will be assigned to the general storage area in the ward.
+Every ward unit and room has a display and a scanner.

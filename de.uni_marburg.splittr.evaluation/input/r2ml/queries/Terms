@@ -1,0 +1,3 @@
+3. TERMS 
+
+Terms are either object terms standing for objects, or data terms standing for data values. The concrete syntax of first-order non-Boolean OCL expressions can be directly mapped to our abstract concepts of ObjectTerm and DataTerm which can be viewed as a predicatelogic-based reconstruction of the standard OCL abstract syntax. 

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: de.unimarburg.mflt.test
+Bundle-Version: 1.0.0.qualifier
+Export-Package: de.uni_marburg.splittr.evaluation
+Require-Bundle: de.uni_marburg.splittr.core,
+ de.uni_marburg.splittr.description,
+ org.eclipse.uml2.uml,
+ org.eclipse.emf.ecore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.core.resources,
+ org.eclipse.ui

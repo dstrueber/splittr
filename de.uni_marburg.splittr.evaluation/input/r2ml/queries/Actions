@@ -1,0 +1,3 @@
+6. ACTIONS 
+
+R2ML offers support both for production rules and reaction rules. With this respect it defines the concept of an action. An action  is either an InvokeActionExpression or an AssignActionExpression or a CreateActionExpression or a DeleteActionExpression. R2ML also provides message actions in the form of a concrete SOAPAction.

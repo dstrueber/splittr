@@ -1,0 +1,1 @@
+An Action is the fundamental unit of behavior specification in UML. An Action may take a set of inputs and produce a set of outputs, though either or both of these sets may be empty. Some Actions may modify the state of the system in which the Action executes. 

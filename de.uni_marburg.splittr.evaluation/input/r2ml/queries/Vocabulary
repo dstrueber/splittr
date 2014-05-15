@@ -1,0 +1,7 @@
+2. CONTENT LANGUAGE 
+Logical formulas and rules are expressed with the help of logical connectives on the basis of a content language consisting of a datatype language and a user-defined content vocabulary. 
+
+The datatype language consists of a set of predefined datatype names, including the name rdfs:Literal standing for the generic datatype of all Unicode strings. Each predefined datatype name is associated with: a set of data literals, which are Unicode strings; a set of datatype function names; a set of datatype predicate names. 
+
+The user-defined content vocabulary includes user-defined object names; user-defined object function names comprising role function names and object property names;  user-defined data function names comprising attributes and data operations; user-defined noun concept names standing for general noun concepts, among which we distinguish object types, or classes, and datatypes; 
+ user-defined verb concept names, called 'predicate symbols' in traditional logic, standing for general verb concepts, or predicates, among which we distinguish properties and associations; properties are either attributes, if they are data-valued, or reference properties, if they are object-valued. 

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: de.uni_marburg.splittr.ui.ecoretools;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: de.uni_marburg.splittr.ui.ecoretools.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.mtl,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ de.uni_marburg.splittr.core,
+ org.eclipse.sirius.diagram;bundle-version="1.0.0",
+ de.uni_marburg.splittr.description
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

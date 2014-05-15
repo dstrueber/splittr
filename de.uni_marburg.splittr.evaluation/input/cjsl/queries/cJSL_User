@@ -1,0 +1,1 @@
+	A user can be member of many but must be at least part of one user groups. Every user can specify a specific user profile with various profile attributes. He can set his preferred editor, backend template, time zone and language. User groups are the interface to the access and view level, which specify the ACL of the application.

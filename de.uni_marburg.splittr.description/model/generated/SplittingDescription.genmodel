@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.uni_marburg.splittr.description/src-gen" editDirectory="/de.uni_marburg.splittr.description.edit/src"
+    editorDirectory="/de.uni_marburg.splittr.description.editor/src" modelPluginID="de.uni_marburg.splittr.description"
+    forceOverwrite="true" modelName="SplittingDescription" updateClasspath="false"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="5.0"
+    copyrightFields="false" editPluginID="de.uni_marburg.splittr.description.edit"
+    editorPluginID="de.uni_marburg.splittr.description.editor" runtimeVersion="2.10">
+  <genPackages prefix="Splittr" basePackage="de.uni_marburg.splittr.description" disposableProviderFactory="true"
+      fileExtensions="splittr" ecorePackage="SplittingDescription.ecore#/">
+    <genClasses ecoreClass="SplittingDescription.ecore#//SplittingDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/modelLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/threshold"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SplittingDescription.ecore#//SplittingDescription/submodels"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightGeneralization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightAggregation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightAssociation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightContainment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/weightEnum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SplittingDescription/alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="SplittingDescription.ecore#//SubModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SubModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SplittingDescription.ecore#//SubModel/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

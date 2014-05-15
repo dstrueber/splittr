@@ -1,0 +1,1 @@
+The Ecore metamodel contains the information about the defined classes. The Ecore model shows a root object representing the whole model.  This model has children which represents the packages, whose children represents the classes, while the children of the classes represents the attributes of these classes. 

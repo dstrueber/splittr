@@ -1,0 +1,3 @@
+5. FORMULAS
+
+R2ML provides two abstract concepts for formulas: the concept of AndOrNafNegFormula, which represents the most general quantifier free logical formula with weak and strong negations, and the concept of LogicalFormula, which corresponds to a general first order formula.

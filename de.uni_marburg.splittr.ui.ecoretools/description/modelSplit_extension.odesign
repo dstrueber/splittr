@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Ecore documentation extension" version="8.1.0">
+  <ownedViewpoints endUserDocumentation="Contributes a layer to manage documentation annotations in the Entities modeler." name="ModelSplit" modelFileExtension="ecore">
+    <ownedRepresentationExtensions xsi:type="description_1:DiagramExtensionDescription" name="Entities" viewpointURI="viewpoint:/org.eclipse.emf.ecoretools.design/Design" representationName="Entities">
+      <metamodel href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+      <layers endUserDocumentation="Add support for documentation annotations." name="Model Splitting" activeByDefault="true">
+        <toolSections name="Splitting Actions">
+          <ownedTools xsi:type="tool:ToolDescription" name="Assign" precondition="[oclIsKindOf(ecore::EClass)/]" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="Call Wizard" forceRefresh="true" id="de.uni_marburg.splittr.ui.ecoretools.action.assignsubmodel"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[view.oclIsKindOf(DNodeList) /]">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="backgroundColor" value="//@userColorsPalettes[name='SplitColorPalette']/@entries[name='SplitColors']"/>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[view.oclIsKindOf(DNodeList) /]">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" applyOnAll="true" attributeName="labelExpression" value="service:getLabel"/>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[view.oclIsKindOf(DEdge) /]">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="strokeColor" value="//@userColorsPalettes[name='SplitColorPalette']/@entries[name='SplitColors']"/>
+          </vsmElementCustomizations>
+        </customization>
+      </layers>
+    </ownedRepresentationExtensions>
+    <ownedJavaExtensions qualifiedClassName="de.uni_marburg.splittr.ui.ecoretools.editor.ColorServices"/>
+    <ownedJavaExtensions qualifiedClassName="de.uni_marburg.splittr.ui.ecoretools.editor.LabelServices"/>
+    <reuses>viewpoint:/org.eclipse.sirius.sample.ecore.design/Design</reuses>
+    <customizes>viewpoint:/org.eclipse.sirius.sample.ecore.design/Design</customizes>
+  </ownedViewpoints>
+  <userColorsPalettes name="SplitColorPalette">
+    <entries xsi:type="description:InterpolatedColor" name="SplitColors" colorValueComputationExpression="service:getColor" maxValueComputationExpression="2">
+      <colorSteps associatedValue="0">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+      </colorSteps>
+      <colorSteps associatedValue="1">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+      </colorSteps>
+      <colorSteps associatedValue="2">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+      </colorSteps>
+      <colorSteps associatedValue="3">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+      </colorSteps>
+      <colorSteps associatedValue="4">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+      </colorSteps>
+      <colorSteps associatedValue="5">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+      </colorSteps>
+      <colorSteps associatedValue="6">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+      </colorSteps>
+      <colorSteps associatedValue="7">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+      </colorSteps>
+      <colorSteps associatedValue="8">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+      </colorSteps>
+      <colorSteps associatedValue="9">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+      </colorSteps>
+      <colorSteps associatedValue="10">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+      </colorSteps>
+      <colorSteps associatedValue="11">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+      </colorSteps>
+      <colorSteps associatedValue="12">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+      </colorSteps>
+      <colorSteps associatedValue="13">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+      </colorSteps>
+      <colorSteps associatedValue="14">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+      </colorSteps>
+      <colorSteps associatedValue="15">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+      </colorSteps>
+      <colorSteps associatedValue="50">
+        <associatedColor href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+      </colorSteps>
+    </entries>
+  </userColorsPalettes>
+</description:Group>

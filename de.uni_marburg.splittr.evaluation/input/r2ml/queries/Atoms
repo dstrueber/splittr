@@ -1,0 +1,3 @@
+4. ATOMS 
+
+The basic logical constituents of a rule are atomic formulas, called 'atoms'. In R2ML we define 9 types of atoms, including two convenience constructs: Object description atom, representing a conjunctive aggregate of a number of simpler atoms (like an RDF description). Inequality atom, representing a negation of an equality atom. 

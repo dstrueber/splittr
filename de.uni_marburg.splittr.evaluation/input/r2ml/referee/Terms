@@ -1,0 +1,15 @@
+GenericTerm
+Term
+ObjectTerm
+DataTerm
+ObjectVariable
+DataVariable
+GenericVariable
+DatatypeFunctionTerm
+DataFunctionTerm
+AttributeFunctionTerm
+DataOperationTerm
+ReferencePropertyFunctionTerm
+ObjectOperationTerm
+GenericFunctionTerm
+Variable

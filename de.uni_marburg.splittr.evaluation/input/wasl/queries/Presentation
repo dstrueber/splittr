@@ -1,0 +1,3 @@
+The graphical representation of the data and the business logic is represented in the presentation model by means of aggregated views. 
+ListView, CreateView, EditView, DeleteView und DataSetView are provided as predefined view subtypes.
+The seperation of view and logic tuples enables a seperated modelling of presentation and business logic, such that the same business logic can be represented in different views in different ways.
