@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: de.uni_marburg.splittr.description
 Bundle-Vendor: My Company
 Bundle-Version: 1.0.0.qualifier
-Bundle-SymbolicName: de.uni_marburg.splittr.description; singleton:=true
+Bundle-SymbolicName: de.uni_marburg.splittr.description;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.xtext.xbase;resolution:=optional;visibility:=reexport,
@@ -21,15 +21,15 @@ Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: de.uni_marburg.splittr.description,
- de.uni_marburg.splittr.description.services,
- de.uni_marburg.splittr.description.serializer,
+ de.uni_marburg.splittr.description.formatting,
+ de.uni_marburg.splittr.description.generator,
  de.uni_marburg.splittr.description.parser.antlr,
  de.uni_marburg.splittr.description.parser.antlr.internal,
- de.uni_marburg.splittr.description.validation,
  de.uni_marburg.splittr.description.scoping,
- de.uni_marburg.splittr.description.generator,
- de.uni_marburg.splittr.description.formatting,
+ de.uni_marburg.splittr.description.serializer,
+ de.uni_marburg.splittr.description.services,
  de.uni_marburg.splittr.description.splittr,
  de.uni_marburg.splittr.description.splittr.impl,
- de.uni_marburg.splittr.description.splittr.util
+ de.uni_marburg.splittr.description.splittr.util,
+ de.uni_marburg.splittr.description.validation
 

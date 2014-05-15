@@ -18,7 +18,7 @@
         <acceleoCompiler 
             sourceFolder="${target.folder}"
             outputFolder="${target.folder}"
-            dependencies="${target.folder}/../../de.uni_marburg.mflt;${target.folder}/../../de.uni_marburg.msplit.model;${target.folder}/../../de.uni_marburg.mflt.analysis;${target.folder}/../../de.uni_marburg.mflt.evaluation;"
+            dependencies="${target.folder}/../../de.uni_marburg.splittr.core;${target.folder}/../../de.uni_marburg.splittr.description;${target.folder}/../../de.uni_marburg.splittr.description.ui;"
             binaryResource="false"
             packagesToRegister="">
         </acceleoCompiler>

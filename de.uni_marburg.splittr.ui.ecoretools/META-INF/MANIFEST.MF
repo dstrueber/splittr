@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: %pluginName
+Bundle-Name: de.uni_marburg.splittr.ui.ecoretools
 Bundle-SymbolicName: de.uni_marburg.splittr.ui.ecoretools;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: de.uni_marburg.splittr.ui.ecoretools.Activator
