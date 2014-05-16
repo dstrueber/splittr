@@ -49,7 +49,8 @@ public class CreateSplittingDescriptionStubAction implements
 		description.getSubmodels().add(s1);
 		description.setModelLocation(modelPath.lastSegment());
 		
-		FileIOUtil.saveXtextResource(description, splitDescriptionPath.toString());
+		String descriptionPathString = splitDescriptionPath.toString();
+		FileIOUtil.saveXtextResource(description, descriptionPathString);
 		RefreshUtil.refreshAllProjects();
 
 		openFileInEditor(getFile(splitDescriptionPath));

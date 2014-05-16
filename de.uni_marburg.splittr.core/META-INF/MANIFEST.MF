@@ -3,7 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: de.uni_marburg.splittr.core;singleton:=true
 Bundle-Version: 0.0.0.qualifier
-Bundle-ClassPath: lib/third_party/jgrapht-jdk1.6.jar;visibility:=reexport,
+Bundle-ClassPath: .,
+ lib/third_party/jgrapht-jdk1.6.jar;visibility:=reexport,
  lib/third_party/lucene-analyzers-common-4.4.0.jar;visibility:=reexport,
  lib/third_party/lucene-core-4.4.0.jar;visibility:=reexport,
  lib/third_party/lucene-demo-4.4.0.jar;visibility:=reexport,
